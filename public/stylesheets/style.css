@@ -126,6 +126,8 @@ nav {
   color: #000;
   text-align: center;
   padding-top: 4em;
+  padding-bottom: 4em;
+  height: auto;
   border-bottom: 1em solid #996515; }
   #home-page #greeting-section p {
     font-family: 'Great Vibes', cursive;
@@ -133,5 +135,12 @@ nav {
     font-weight: 100;
     color: #b39700;
     margin-top: 0; }
+
+#home-page .swiper-container {
+  width: 90%;
+  height: 100%; }
+  #home-page .swiper-container img {
+    height: 40%;
+    width: auto; }
 
 /*# sourceMappingURL=style.css.map */

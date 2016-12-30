@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <nav>
+        <!-- Logo -->
+        <div id='logo'>
+          <!-- <img src="images/fb.png" alt="" /> -->
+        </div>
+        <!-- End Logo -->
+
+        <!-- Home -->
+        <div id='nav-home' class='nav-item'>
+          HOME
+        </div>
+        <!-- End Home -->
+
+        <!-- Accomodation -->
+        <div id='nav-accomodation' class='nav-item'>
+          <div id='sub-accomodation-header'>
+            ACCOMODATION
+          </div>
+          <div id='sub-accomodation' class='sub-menu'>
+            <div class="submenu-text">
+              Accomodation<br />
+              ห้องพัก
+            </div>
+          </div>
+          <div id="submenu-right-accomodation">
+            <div class="submenu-text">
+              <a href="#">One Bedroom</a>
+            </div>
+            <br>
+            <div class="submenu-text">
+              <a href="#">Two Bedroom</a>
+            </div>
+          </div>
+        </div>
+        <!-- End Accomodation -->
+
+        <!-- Services -->
+        <div id='nav-services' class='nav-item'>
+          SERVICES
+        </div>
+        <!-- End Services -->
+
+        <!-- Facilities -->
+        <div id='nav-facilities' class='nav-item'>
+          <div id='sub-facilities-header'>
+            FACILITIES
+          </div>
+          <div id='sub-facilities' class='sub-menu'>
+            <div class="submenu-text">
+              Huge Swimming Pool<br />
+              สระว่ายน้ำขนาดใหญ่
+            </div>
+            <div class="submenu-text">
+              Modern Gym<br />
+              ฟิสเนสวิวสระว่ายน้ำ
+            </div>
+            <div class="submenu-text">
+              <br />
+              Restaurant<br / />
+              ร้านอาหาร
+            </div>
+          </div>
+        </div>
+        <!-- End Facilities -->
+
+        <!-- About us -->
+        <div id='nav-aboutus' class='nav-item'>
+          <div id='sub-aboutus-header'>
+            ABOUT US
+          </div>
+          <div id='sub-aboutus' class='sub-menu'>
+            <div class="submenu-text">
+              About Us<br />
+              เกี่ยวกับเรา
+            </div>
+            <div class="submenu-text">
+              Contact<br />
+              ติดต่อเรา
+            </div>
+            <div class="submenu-text">
+              Direction<br />
+              นำทาง
+            </div>
+          </div>
+        </div>
+        <!-- End About us -->
+    </nav>
+
+    <div id='app-container'>
+      {{{body}}}
+    </div>
+
+    <script type='text/javascript' src='jquery/dist/jquery.min.js'></script>
+    <script type='text/javascript' src='javascripts/NavController.js'></script>
+  </body>
+</html>

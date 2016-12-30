@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Alice|Great+Vibes");
+body {
+  padding: 50px;
+  padding-top: 0;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #000;
+  color: #FFF; }
+
+a {
+  text-decoration: none;
+  color: #FFF; }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: absolute;
+  right: 50px;
+  top: 2em;
+  z-index: 100; }
+  nav .nav-item {
+    flex-grow: 1;
+    cursor: pointer;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 13em;
+    text-align: center;
+    -webkit-transform: skew(15deg);
+    -moz-transform: skew(15deg);
+    -o-transform: skew(15deg); }
+  nav #nav-home {
+    background-color: #F2671F; }
+  nav #nav-accomodation {
+    background-color: #C91b26; }
+  nav #nav-services {
+    background-color: #9C0F5F; }
+  nav #nav-facilities {
+    background-color: #60047A; }
+  nav #nav-aboutus {
+    background-color: #160A47; }
+  nav .sub-menu {
+    display: none;
+    margin-top: 1em; }
+  nav .submenu-text {
+    padding: 1em;
+    cursor: pointer; }
+  nav #sub-accomodation {
+    display: flex none;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2em; }
+  nav #submenu-accomodation-picture {
+    display: none;
+    margin: 0;
+    padding: 0; }
+    nav #submenu-accomodation-picture img {
+      margin-top: 1em;
+      margin-bottom: -1.5em;
+      width: auto;
+      height: 6.5em;
+      border: 2px solid #7F1118; }
+  nav #submenu-right-accomodation {
+    display: none;
+    padding: 1em;
+    position: relative;
+    margin-top: 1em;
+    background-color: #7F1118;
+    border-radius: 1em; }
+    nav #submenu-right-accomodation .submenu-text {
+      border-radius: 1em; }
+    nav #submenu-right-accomodation .submenu-text:hover {
+      background-color: #C91b26; }
+  nav #sub-facilities .submenu-text:hover {
+    background-color: #910283; }
+  nav #sub-aboutus .submenu-text:hover {
+    background-color: #411ED3; }
+  nav #logo {
+    padding: 1em;
+    flex-grow: 1; }
+    nav #logo img {
+      flex-grow: 2;
+      margin-left: 6em;
+      margin-right: 6em;
+      width: 8em; }
+
+.section {
+  width: 100%;
+  height: 25em; }
+
+#app-container {
+  margin-top: 4.2em; }
+
+#home-page .image-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  overflow: hidden;
+  max-width: 100%;
+  height: 35em;
+  border-bottom: 1em solid #996515; }
+  #home-page .image-header img {
+    width: 100%;
+    height: auto;
+    margin-top: -10em; }
+
+#home-page .image-header-text {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2em;
+  border-radius: 1em;
+  border-bottom: 1em solid rgba(255, 215, 0, 0.7); }
+  #home-page .image-header-text h1 {
+    font-family: 'Alice', serif;
+    font-size: 36px; }
+  #home-page .image-header-text p {
+    text-align: center;
+    font-size: 20px; }
+
+#home-page #greeting-section {
+  background-color: #FFF;
+  color: #000;
+  text-align: center;
+  padding-top: 4em;
+  border-bottom: 1em solid #996515; }
+  #home-page #greeting-section p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    font-weight: 100;
+    color: #b39700;
+    margin-top: 0; }
+
+/*# sourceMappingURL=style.css.map */

@@ -4,7 +4,8 @@ body
   padding: 50px
   padding-top: 0
   margin: 0
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+  // font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+  font-family: 'Alice', serif
   background-color: #000
   color: #FFF
 
@@ -142,13 +143,21 @@ nav
     padding-top: 4em
     padding-bottom: 4em
     height: auto
+    border-bottom: 1em solid rgb(153,101,21)
     p
+      color: #b39700
+      margin-top: 0
+    .header-greeting
       font-family: 'Great Vibes', cursive
       font-size: 48px
       font-weight: 100
-      color: #b39700
-      margin-top: 0
-    border-bottom: 1em solid rgb(153,101,21)
+    .body-greeting
+      margin-top: 2em
+      font-size: 23px
+      font-weight: 100
+      line-height: 1.5em
+
+
 
   .swiper-container
     width: 90%
@@ -160,6 +169,7 @@ nav
 #room-section
   height: 40em
   border-bottom: 1em solid rgb(153,101,21)
+  // margin-bottom: 1em
   .parallax-bg
     background-image: url('/images/slides/room.png')
     position: absolute
@@ -188,3 +198,35 @@ nav
     line-height: 2em
     ul
       list-style-type: none
+#facilities-section
+  height: 100%
+  img
+    width: 100%
+    height: 100%
+  .header-facilities
+    width: 100%
+    background-color: #60047A
+    padding: 0.7em
+    font-size: 28px
+    font-weight: bold
+    border-bottom: 0.3em solid #9B03C6
+    // margin-bottom: 0.5em
+  .swiper-slide
+    text-align: center
+    font-size: 18px
+    background: #fff
+    height: 200px
+
+    /* Center slide text vertically */
+    display: -webkit-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    -webkit-justify-content: center
+    justify-content: center
+    -webkit-box-align: center
+    -ms-flex-align: center
+    -webkit-align-items: center
+    align-items: center

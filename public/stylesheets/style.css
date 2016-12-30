@@ -3,7 +3,7 @@ body {
   padding: 50px;
   padding-top: 0;
   margin: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Alice', serif;
   background-color: #000;
   color: #FFF; }
 
@@ -130,11 +130,17 @@ nav {
   height: auto;
   border-bottom: 1em solid #996515; }
   #home-page #greeting-section p {
-    font-family: 'Great Vibes', cursive;
-    font-size: 48px;
-    font-weight: 100;
     color: #b39700;
     margin-top: 0; }
+  #home-page #greeting-section .header-greeting {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    font-weight: 100; }
+  #home-page #greeting-section .body-greeting {
+    margin-top: 2em;
+    font-size: 23px;
+    font-weight: 100;
+    line-height: 1.5em; }
 
 #home-page .swiper-container {
   width: 90%;
@@ -174,5 +180,36 @@ nav {
     line-height: 2em; }
     #room-section .text ul {
       list-style-type: none; }
+
+#facilities-section {
+  height: 100%; }
+  #facilities-section img {
+    width: 100%;
+    height: 100%; }
+  #facilities-section .header-facilities {
+    width: 100%;
+    background-color: #60047A;
+    padding: 0.7em;
+    font-size: 28px;
+    font-weight: bold;
+    border-bottom: 0.3em solid #9B03C6; }
+  #facilities-section .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: 200px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; }
 
 /*# sourceMappingURL=style.css.map */

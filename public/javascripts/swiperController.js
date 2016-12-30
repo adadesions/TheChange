@@ -21,4 +21,12 @@ $(document).ready(function () {
      loop: true,
      autoplay: 2500
    });
+
+   var roomSwiper = new Swiper('#facilities-section', {
+     slidesPerView: 3,
+     slidesPerColumn: 2,
+     pagination: '.swiper-pagination',
+     paginationClickable: true,
+     spaceBetween: 20
+   });
   });

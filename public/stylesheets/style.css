@@ -143,4 +143,36 @@ nav {
     height: 40%;
     width: auto; }
 
+#room-section {
+  height: 40em;
+  border-bottom: 1em solid #996515; }
+  #room-section .parallax-bg {
+    background-image: url("/images/slides/room.png");
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center; }
+  #room-section .swiper-container {
+    width: 100%;
+    height: 100%;
+    background-color: #FFF; }
+  #room-section .swiper-slide {
+    padding-top: 4em;
+    padding-left: 2.5em;
+    word-wrap: break-word;
+    background-color: rgba(0, 0, 0, 0.5); }
+  #room-section .title {
+    font-size: 42px; }
+  #room-section .subtitle {
+    font-size: 28px; }
+  #room-section .text {
+    font-size: 20px;
+    line-height: 2em; }
+    #room-section .text ul {
+      list-style-type: none; }
+
 /*# sourceMappingURL=style.css.map */

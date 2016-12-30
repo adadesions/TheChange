@@ -1,6 +1,6 @@
 $(document).ready(function () {
    //initialize swiper when document ready
-   var mySwiper = new Swiper ('.swiper-container', {
+   var greetingSwiper = new Swiper ('#greeting-section-slide', {
      // Optional parameters
      direction: 'horizontal',
      speed: 1000,
@@ -11,5 +11,14 @@ $(document).ready(function () {
      touchEventsTarget: '.swiper-container',
      lazyLoading: true,
      loop: true
-   })
+   });
+
+   var roomSwiper = new Swiper('#room-section', {
+     parallax: true,
+     speed: 800,
+     nextButton: '.swiper-button-next',
+     prevButton: '.swiper-button-prev',
+     loop: true,
+     autoplay: 2500
+   });
   });

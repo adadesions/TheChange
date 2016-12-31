@@ -22,15 +22,7 @@ $(document).ready(function () {
      autoplay: 2500
    });
 
-   var roomSwiper = new Swiper('#facilities-section', {
-     slidesPerView: 3,
-     slidesPerColumn: 2,
-     pagination: '.swiper-pagination',
-     paginationClickable: true,
-     spaceBetween: 20
-   });
-
-   var roomSwiper = new Swiper('#bedroom-slide', {
+   var bedroomSwiper = new Swiper('#bedroom-slide', {
         effect: 'coverflow',
         grabCursor: true,
         centeredSlides: true,
@@ -43,5 +35,14 @@ $(document).ready(function () {
             slideShadows : true
         },
         loop: true
+   });
+
+   var servicesSwiper = new Swiper('#services-page', {
+     parallax: true,
+     speed: 800,
+     nextButton: '.swiper-button-next',
+     prevButton: '.swiper-button-prev',
+     loop: true,
+     autoplay: 2500
    });
 });

@@ -10,6 +10,13 @@ a {
   text-decoration: none;
   color: #FFF; }
 
+.flex-all {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
 nav {
   display: flex;
   flex-direction: row;
@@ -29,63 +36,56 @@ nav {
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     -o-transform: skew(15deg); }
-
-.flex-all {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex; }
-  .flex-all #nav-home {
+  nav #nav-home {
     background-color: #F2671F; }
-  .flex-all #nav-accomodation {
+  nav #nav-accomodation {
     background-color: #C91b26; }
-  .flex-all #nav-services {
+  nav #nav-services {
     background-color: #9C0F5F; }
-  .flex-all #nav-facilities {
+  nav #nav-facilities {
     background-color: #60047A; }
-  .flex-all #nav-aboutus {
+  nav #nav-aboutus {
     background-color: #160A47; }
-  .flex-all .sub-menu {
+  nav .sub-menu {
     display: none;
     margin-top: 1em; }
-  .flex-all .submenu-text {
+  nav .submenu-text {
     padding: 1em;
     cursor: pointer; }
-  .flex-all #sub-accomodation {
+  nav #sub-accomodation {
     display: flex none;
     flex-direction: column;
     text-align: center;
     margin-top: 2em; }
-  .flex-all #submenu-accomodation-picture {
+  nav #submenu-accomodation-picture {
     display: none;
     margin: 0;
     padding: 0; }
-    .flex-all #submenu-accomodation-picture img {
+    nav #submenu-accomodation-picture img {
       margin-top: 1em;
       margin-bottom: -1.5em;
       width: auto;
       height: 6.5em;
       border: 2px solid #7F1118; }
-  .flex-all #submenu-right-accomodation {
+  nav #submenu-right-accomodation {
     display: none;
     padding: 1em;
     position: relative;
     margin-top: 1em;
     background-color: #7F1118;
     border-radius: 1em; }
-    .flex-all #submenu-right-accomodation .submenu-text {
+    nav #submenu-right-accomodation .submenu-text {
       border-radius: 1em; }
-    .flex-all #submenu-right-accomodation .submenu-text:hover {
+    nav #submenu-right-accomodation .submenu-text:hover {
       background-color: #C91b26; }
-  .flex-all #sub-facilities .submenu-text:hover {
+  nav #sub-facilities .submenu-text:hover {
     background-color: #910283; }
-  .flex-all #sub-aboutus .submenu-text:hover {
+  nav #sub-aboutus .submenu-text:hover {
     background-color: #411ED3; }
-  .flex-all #logo {
+  nav #logo {
     padding: 1em;
     flex-grow: 1; }
-    .flex-all #logo img {
+    nav #logo img {
       flex-grow: 2;
       margin-left: 6em;
       margin-right: 6em;
@@ -368,5 +368,134 @@ footer {
 
 #account-item-right {
   background-color: #343434; }
+
+.direction-page {
+  border-bottom: 1em solid #160A47; }
+  .direction-page iframe {
+    width: 100%;
+    height: 40em; }
+  .direction-page .head-text {
+    font-size: 38px;
+    padding: 0.5em;
+    background-color: #160A47; }
+
+@media (min-width: 300px) and (max-width: 768px) {
+  #app-container {
+    padding: 0; }
+  nav {
+    right: 0;
+    top: 0; }
+    nav .nav-item {
+      width: 8em;
+      font-size: 8px;
+      -webkit-transform: none;
+      -moz-transform: none;
+      -o-transform: none; }
+  .image-header {
+    height: auto; }
+    .image-header img {
+      margin-top: 0; }
+  .image-header-text {
+    top: 8%;
+    padding: 1em; }
+    .image-header-text h1 {
+      font-family: 'Alice', serif;
+      font-size: 16px; }
+    .image-header-text p {
+      text-align: center;
+      font-size: 12px; }
+  #home-page #greeting-section {
+    padding-top: 1.5em; }
+    #home-page #greeting-section .header-greeting {
+      font-family: 'Great Vibes', cursive;
+      font-size: 27px;
+      font-weight: 100; }
+  #home-page .swiper-container {
+    width: 100%;
+    height: 50%; }
+    #home-page .swiper-container img {
+      height: 20em;
+      width: auto; }
+  #room-section, #services-page, #facilities-page {
+    height: 30em;
+    margin-bottom: 0; }
+    #room-section .swiper-slide, #services-page .swiper-slide, #facilities-page .swiper-slide {
+      padding-top: 1em;
+      padding-left: 0.3em; }
+    #room-section .title, #services-page .title, #facilities-page .title {
+      font-size: 28px; }
+    #room-section .subtitle, #services-page .subtitle, #facilities-page .subtitle {
+      font-size: 20px; }
+    #room-section .text, #services-page .text, #facilities-page .text {
+      font-size: 16px;
+      line-height: 2em; }
+      #room-section .text i, #services-page .text i, #facilities-page .text i {
+        margin-right: 1em; }
+  .services-facilities-container {
+    flex-flow: column nowrap; }
+    .services-facilities-container .flex-item {
+      width: 100%;
+      height: auto; }
+    .services-facilities-container .text {
+      padding: 2em;
+      padding-top: 1em; }
+    .services-facilities-container .text-right {
+      text-align: right; }
+    .services-facilities-container img {
+      width: 100%;
+      object-fit: contain; }
+    .services-facilities-container h1 {
+      letter-spacing: 5px; }
+    .services-facilities-container ul {
+      line-height: 30px; }
+  footer {
+    display: none; }
+  .bedroom-page h1 {
+    font-size: 18px; }
+  .bedroom-page .image-header {
+    border: none;
+    height: 10.5em; }
+  .bedroom-page .image-header-text {
+    top: 0;
+    left: 0;
+    right: 0; }
+  #bedroom-slide {
+    padding: 0; }
+    #bedroom-slide .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 15em;
+      height: 20em;
+      border: 5px solid #FFF; }
+  #services-page {
+    padding-top: 1em; }
+    #services-page ul {
+      font-size: 14px; }
+  #facilities-page {
+    padding-top: 1em; }
+  .facilities-container .facilities-in-item {
+    padding-top: 2em;
+    text-align: center; }
+    .facilities-container .facilities-in-item h1 {
+      font-size: 20px; }
+    .facilities-container .facilities-in-item #facilities-slide {
+      width: 100%; }
+      .facilities-container .facilities-in-item #facilities-slide .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 10em;
+        height: 20em; }
+  .contact-page-container {
+    flex-flow: column nowrap; }
+    .contact-page-container .flex-item {
+      height: 24em; }
+    .contact-page-container h1 {
+      font-size: 25px; }
+    .contact-page-container img {
+      object-fit: cover; }
+  .direction-page .head-text {
+    font-size: 25px;
+    padding: 0.5em;
+    padding-top: 1.5em; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,6 +13,13 @@ a
   text-decoration: none
   color: #FFF
 
+.flex-all
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+
 nav
   display: flex
   flex-direction: row
@@ -32,13 +39,6 @@ nav
     -webkit-transform: skew(15deg)
 	   -moz-transform: skew(15deg)
 	   -o-transform: skew(15deg)
-
-.flex-all
-  display: -webkit-box
-  display: -moz-box
-  display: -ms-flexbox
-  display: -webkit-flex
-  display: flex
 
   #nav-home
     background-color: #F2671F
@@ -374,3 +374,143 @@ footer
 
 #account-item-right
   background-color: #343434
+
+.direction-page
+  border-bottom: 1em solid #160A47
+  iframe
+    width: 100%
+    height: 40em
+    // border-bottom: 1em solid #160A47
+  .head-text
+    font-size: 38px
+    padding: 0.5em
+    background-color: #160A47
+
+@media (min-width: 300px) and (max-width: 768px)
+  #app-container
+    padding: 0
+  nav
+    right: 0
+    top: 0
+    .nav-item
+      width: 8em
+      font-size: 8px
+      -webkit-transform: none
+      -moz-transform: none
+      -o-transform: none
+  .image-header
+    height: auto
+    img
+      margin-top: 0
+  .image-header-text
+    top: 8%
+    padding: 1em
+    h1
+      font-family: 'Alice', serif
+      font-size: 16px
+    p
+      text-align: center
+      font-size: 12px
+  #home-page
+    #greeting-section
+      padding-top: 1.5em
+      .header-greeting
+        font-family: 'Great Vibes', cursive
+        font-size: 27px
+        font-weight: 100
+    .swiper-container
+      width: 100%
+      height: 50%
+      img
+        height: 20em
+        width: auto
+  #room-section,#services-page,#facilities-page
+    height: 30em
+    margin-bottom: 0
+    .swiper-slide
+      padding-top: 1em
+      padding-left: 0.3em
+    .title
+      font-size: 28px
+    .subtitle
+      font-size: 20px
+    .text
+      font-size: 16px
+      line-height: 2em
+      i
+        margin-right: 1em
+  .services-facilities-container
+    flex-flow: column nowrap
+    .flex-item
+      width: 100%
+      height: auto
+    .text
+      padding: 2em
+      padding-top: 1em
+    .text-right
+      text-align: right
+    img
+      width: 100%
+      // height: 100%
+      object-fit: contain
+    h1
+      letter-spacing: 5px
+    ul
+      line-height: 30px
+
+  footer
+    display: none
+
+  .bedroom-page
+    h1
+      font-size: 18px
+    .image-header
+      border: none
+      height: 10.5em
+    .image-header-text
+      top: 0
+      left: 0
+      right: 0
+  #bedroom-slide
+    padding: 0
+    .swiper-slide
+      background-position: center
+      background-size: cover
+      width: 15em
+      height: 20em
+      border: 5px solid #FFF
+
+  #services-page
+    padding-top: 1em
+    ul
+      font-size: 14px
+  #facilities-page
+    padding-top: 1em
+  .facilities-container
+    .facilities-in-item
+      padding-top: 2em
+      text-align: center
+      h1
+        font-size: 20px
+      #facilities-slide
+        width: 100%
+        .swiper-slide
+          background-position: center
+          background-size: cover
+          width: 10em
+          height: 20em
+
+  .contact-page-container
+    flex-flow: column nowrap
+    .flex-item
+      height: 24em
+    h1
+      font-size: 25px
+    img
+      object-fit: cover
+
+  .direction-page
+    .head-text
+      font-size: 25px
+      padding: 0.5em
+      padding-top: 1.5em

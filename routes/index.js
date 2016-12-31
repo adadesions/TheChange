@@ -18,4 +18,12 @@ router.get('/facilities', function(req, res, next) {
   res.render('facilities');
 });
 
+router.get('/aboutus', function(req, res, next) {
+    res.render('aboutus/aboutus');
+});
+
+router.get('/aboutus/:about', function(req, res, next) {    
+    res.render('aboutus/'+req.params.about);
+});
+
 module.exports = router;

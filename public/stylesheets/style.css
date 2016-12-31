@@ -151,7 +151,8 @@ nav {
 
 #room-section {
   height: 40em;
-  border-bottom: 1em solid #996515; }
+  border-bottom: 1em solid #996515;
+  margin-bottom: 1em; }
   #room-section .parallax-bg {
     background-image: url("/images/slides/room.png");
     position: absolute;
@@ -211,5 +212,45 @@ nav {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center; }
+
+.services-facilities-container {
+  display: flex; }
+  .services-facilities-container .flex-item {
+    width: 100%;
+    height: 23em; }
+  .services-facilities-container .text {
+    padding: 2em;
+    padding-top: 1em; }
+  .services-facilities-container .text-right {
+    text-align: right; }
+  .services-facilities-container img {
+    width: 100%;
+    height: 100%; }
+  .services-facilities-container h1 {
+    letter-spacing: 5px; }
+  .services-facilities-container ul {
+    line-height: 30px; }
+
+#services-item-left {
+  background-color: #9C0F5F; }
+
+#facilities-item-right {
+  background-color: #60047A; }
+
+.button {
+  border: 2px solid #FFF;
+  padding: 0.5em;
+  text-align: center;
+  cursor: pointer; }
+
+.services-button:hover {
+  background-color: #fff;
+  color: #9C0F5F;
+  font-weight: 900; }
+
+.facilities-button:hover {
+  background-color: #fff;
+  color: #60047A;
+  font-weight: 900; }
 
 /*# sourceMappingURL=style.css.map */

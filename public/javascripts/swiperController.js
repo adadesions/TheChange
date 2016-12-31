@@ -45,4 +45,28 @@ $(document).ready(function () {
      loop: true,
      autoplay: 2500
    });
+
+   var facilitiesSwiper = new Swiper('#facilities-page', {
+     parallax: true,
+     speed: 800,
+     nextButton: '.swiper-button-next',
+     prevButton: '.swiper-button-prev',
+     loop: true,
+     autoplay: 2500
+   });
+
+   var facilitiesSlideSwiper = new Swiper('#facilities-slide', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true
+        },
+        loop: true
+   });
 });

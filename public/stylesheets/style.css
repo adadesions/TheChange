@@ -160,12 +160,11 @@ nav {
     height: 40%;
     width: auto; }
 
-#room-section, #services-page {
+#room-section, #services-page, #facilities-page {
   height: 40em;
   border-bottom: 1em solid #996515;
   margin-bottom: 2em; }
-  #room-section .parallax-bg, #services-page .parallax-bg {
-    background-image: url("/images/slides/room.png");
+  #room-section .parallax-bg, #services-page .parallax-bg, #facilities-page .parallax-bg {
     position: absolute;
     left: 0;
     top: 0;
@@ -174,35 +173,31 @@ nav {
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center; }
-  #room-section .parallax-bg-services, #services-page .parallax-bg-services {
-    background-image: url("/images/services/s3.png");
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 130%;
-    height: 100%;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center; }
-  #room-section .swiper-container, #services-page .swiper-container {
+  #room-section .parallax-bg-room, #services-page .parallax-bg-room, #facilities-page .parallax-bg-room {
+    background-image: url("/images/slides/room.png"); }
+  #room-section .parallax-bg-services, #services-page .parallax-bg-services, #facilities-page .parallax-bg-services {
+    background-image: url("/images/services/s3.png"); }
+  #room-section .parallax-bg-facilities, #services-page .parallax-bg-facilities, #facilities-page .parallax-bg-facilities {
+    background-image: url("/images/facilities/f1.png"); }
+  #room-section .swiper-container, #services-page .swiper-container, #facilities-page .swiper-container {
     width: 100%;
     height: 100%;
     background-color: #FFF; }
-  #room-section .swiper-slide, #services-page .swiper-slide {
+  #room-section .swiper-slide, #services-page .swiper-slide, #facilities-page .swiper-slide {
     padding-top: 4em;
     padding-left: 2.5em;
     word-wrap: break-word;
     background-color: rgba(0, 0, 0, 0.5); }
-  #room-section .title, #services-page .title {
+  #room-section .title, #services-page .title, #facilities-page .title {
     font-size: 42px; }
-  #room-section .subtitle, #services-page .subtitle {
+  #room-section .subtitle, #services-page .subtitle, #facilities-page .subtitle {
     font-size: 28px; }
-  #room-section .text, #services-page .text {
+  #room-section .text, #services-page .text, #facilities-page .text {
     font-size: 20px;
     line-height: 2em; }
-    #room-section .text ul, #services-page .text ul {
+    #room-section .text ul, #services-page .text ul, #facilities-page .text ul {
       list-style-type: none; }
-    #room-section .text i, #services-page .text i {
+    #room-section .text i, #services-page .text i, #facilities-page .text i {
       margin-right: 1em; }
 
 .services-facilities-container {
@@ -291,5 +286,24 @@ footer {
     width: 30em;
     height: 20em;
     border: 5px solid #FFF; }
+
+.facilities-container {
+  flex-direction: column; }
+  .facilities-container .facilities-in-item {
+    width: 100%;
+    height: 10em; }
+    .facilities-container .facilities-in-item img {
+      max-width: 100%;
+      max-height: 100%; }
+    .facilities-container .facilities-in-item #facilities-slide {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px; }
+      .facilities-container .facilities-in-item #facilities-slide .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 30em;
+        height: 20em;
+        border: 5px solid #FFF; }
 
 /*# sourceMappingURL=style.css.map */

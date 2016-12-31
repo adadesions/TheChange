@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{title}}</title>
-    <link rel='stylesheet' href='stylesheets/style.css' />
-    <link rel="stylesheet" href="swiper/dist/css/swiper.min.css" />
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    <title>The Change Sutie</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/swiper/dist/css/swiper.min.css" />
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" />
   </head>
   <body>
     <nav class="flex-all">
@@ -15,9 +15,11 @@
         <!-- End Logo -->
 
         <!-- Home -->
-        <div id='nav-home' class='nav-item'>
-          HOME
-        </div>
+        <a href="/">
+          <div id='nav-home' class='nav-item'>
+            HOME
+          </div>
+        </a>
         <!-- End Home -->
 
         <!-- Accomodation -->
@@ -32,13 +34,17 @@
             </div>
           </div>
           <div id="submenu-right-accomodation">
-            <div class="submenu-text">
-              <a href="#">One Bedroom</a>
-            </div>
+            <a href="/accomodation/onebedroom">
+              <div class="submenu-text">
+                One Bedroom
+              </div>
+            </a>
             <br>
-            <div class="submenu-text">
-              <a href="#">Two Bedroom</a>
-            </div>
+            <a href="/accomodation/twobedroom">
+              <div class="submenu-text">
+                Two Bedrooms
+              </div>
+            </a>
           </div>
         </div>
         <!-- End Accomodation -->
@@ -97,55 +103,57 @@
 
     <div id='app-container'>
       {{{body}}}
-      <footer>
+
+    </div>
+    <footer>
+      <a href="/">
         <div class="header-text-footer">
           The Change Suite
           <hr>
         </div>
-        <div id="footer-container" class="flex-all">
-          <div class="footer-item">
-            <h2>Contact Us</h2>
-            <p>
-              The Change Suite Korat<br />
-              222/4-5 Moo 4<br />
-              Mittraphap-Nonhkai Rd., Bankoh <br />
-              Muang, Nakorn Rachasima 30000 <br />
-              Tel1. +66(0) 910 191 789 <br />
-              Tel2. +66(0) 909 906 495 <br />
-              Fax: +66(0) 44 247534 <br />
-            </p>
-          </div>
-          <div class="footer-item">
-            <h2>Location</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3853.8244756840513!2d102.11699761488718!3d15.002445689547507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31194b9db8575f29%3A0x2e0c2dc8257b24fa!2sThe+Change+All+Suites!5e0!3m2!1sen!2sth!4v1483177523499" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </div>
-          <div class="footer-item">
-            <h2>Follow Us</h2>
-            <a href="https://www.facebook.com">
-              <i class="fa fa-facebook-official fa-2x"></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-twitter-square fa-2x"></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-google-plus-square fa-2x"></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-instagram fa-2x"></i>
-            </a>
-          </div>
+      </a>
+      <div id="footer-container" class="flex-all">
+        <div class="footer-item">
+          <h2>Contact Us</h2>
+          <p>
+            The Change Suite Korat<br />
+            222/4-5 Moo 4<br />
+            Mittraphap-Nonhkai Rd., Bankoh <br />
+            Muang, Nakorn Rachasima 30000 <br />
+            Tel1. +66(0) 910 191 789 <br />
+            Tel2. +66(0) 909 906 495 <br />
+            Fax: +66(0) 44 247534 <br />
+          </p>
         </div>
-        <hr>
-        <br>
-        Copyright © 2017 AdaCode.io
-      </footer>
-    </div>
+        <div class="footer-item">
+          <h2>Location</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3853.8244756840513!2d102.11699761488718!3d15.002445689547507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31194b9db8575f29%3A0x2e0c2dc8257b24fa!2sThe+Change+All+Suites!5e0!3m2!1sen!2sth!4v1483177523499" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="footer-item">
+          <h2>Follow Us</h2>
+          <a href="https://www.facebook.com">
+            <i class="fa fa-facebook-official fa-2x"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter-square fa-2x"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-google-plus-square fa-2x"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-instagram fa-2x"></i>
+          </a>
+        </div>
+      </div>
+      <hr>
+      <br>
+      Copyright © 2017 AdaCode.io
+    </footer>
 
-
-    <script type='text/javascript' src='jquery/dist/jquery.min.js'></script>
-    <script type='text/javascript' src='swiper/dist/js/swiper.min.js'></script>
-    <script type='text/javascript' src='swiper/dist/js/swiper.jquery.min.js'></script>
-    <script type='text/javascript' src='javascripts/navController.js'></script>
-    <script type='text/javascript' src='javascripts/swiperController.js'></script>
+    <script type='text/javascript' src='/jquery/dist/jquery.min.js'></script>
+    <script type='text/javascript' src='/swiper/dist/js/swiper.min.js'></script>
+    <script type='text/javascript' src='/swiper/dist/js/swiper.jquery.min.js'></script>
+    <script type='text/javascript' src='/javascripts/navController.js'></script>
+    <script type='text/javascript' src='/javascripts/swiperController.js'></script>
   </body>
 </html>

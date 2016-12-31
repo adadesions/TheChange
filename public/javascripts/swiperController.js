@@ -29,4 +29,19 @@ $(document).ready(function () {
      paginationClickable: true,
      spaceBetween: 20
    });
-  });
+
+   var roomSwiper = new Swiper('#bedroom-slide', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true
+        },
+        loop: true
+   });
+});

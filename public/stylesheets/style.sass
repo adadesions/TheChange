@@ -118,34 +118,37 @@ nav
   min-height: 100%
   margin-bottom: 1em
 
+.image-header
+  display: flex
+  justify-content: flex-start
+  align-items: flex-start
+  flex-direction: row
+  overflow: hidden
+  max-width: 100%
+  height: 35em
+  border-bottom: 1em solid rgb(153,101,21)
+  p
+    line-height: 1.5em
+  img
+    width: 100%
+    height: auto
+    margin-top: -10em
+.image-header-text
+  position: absolute
+  top: 30%
+  left: 5%
+  background-color: rgba(0,0,0,0.6)
+  padding: 2em
+  border-radius: 1em
+  border-bottom: 1em solid rgba(255,215,0,0.7)
+  h1
+    font-family: 'Alice', serif
+    font-size: 36px
+  p
+    text-align: center
+    font-size: 20px
+
 #home-page
-  .image-header
-    display: flex
-    justify-content: flex-start
-    align-items: flex-start
-    flex-direction: row
-    overflow: hidden
-    max-width: 100%
-    height: 35em
-    border-bottom: 1em solid rgb(153,101,21)
-    img
-      width: 100%
-      height: auto
-      margin-top: -10em
-  .image-header-text
-    position: absolute
-    top: 30%
-    left: 5%
-    background-color: rgba(0,0,0,0.6)
-    padding: 2em
-    border-radius: 1em
-    border-bottom: 1em solid rgba(255,215,0,0.7)
-    h1
-      font-family: 'Alice', serif
-      font-size: 36px
-    p
-      text-align: center
-      font-size: 20px
   #greeting-section
     background-color: #FFF
     color: #000
@@ -166,9 +169,6 @@ nav
       font-size: 23px
       font-weight: 100
       line-height: 1.5em
-
-
-
   .swiper-container
     width: 90%
     height: 100%
@@ -179,7 +179,7 @@ nav
 #room-section
   height: 40em
   border-bottom: 1em solid rgb(153,101,21)
-  margin-bottom: 1em
+  margin-bottom: 2em
   .parallax-bg
     background-image: url('/images/slides/room.png')
     position: absolute
@@ -208,38 +208,7 @@ nav
     line-height: 2em
     ul
       list-style-type: none
-#facilities-section
-  height: 100%
-  img
-    width: 100%
-    height: 100%
-  .header-facilities
-    width: 100%
-    background-color: #60047A
-    padding: 0.7em
-    font-size: 28px
-    font-weight: bold
-    border-bottom: 0.3em solid #9B03C6
-    // margin-bottom: 0.5em
-  .swiper-slide
-    text-align: center
-    font-size: 18px
-    background: #fff
-    height: 200px
 
-    /* Center slide text vertically */
-    display: -webkit-box
-    display: -ms-flexbox
-    display: -webkit-flex
-    display: flex
-    -webkit-box-pack: center
-    -ms-flex-pack: center
-    -webkit-justify-content: center
-    justify-content: center
-    -webkit-box-align: center
-    -ms-flex-align: center
-    -webkit-align-items: center
-    align-items: center
 .services-facilities-container
   display: flex
   .flex-item
@@ -285,7 +254,7 @@ footer
   height: auto
   background-color: #242124
   padding: 2em
-  border-top: 4px solid #FFF  
+  border-top: 4px solid #FFF
   a
     margin-right: 1em
   hr
@@ -310,3 +279,18 @@ footer
       padding-left: 0.8em
       padding-right: 0.8em
       line-height: 1.5em
+
+.bedroom-page
+  h1
+    text-align: center
+    margin-top: 1em
+#bedroom-slide
+  width: 100%
+  padding-top: 50px
+  padding-bottom: 50px
+  .swiper-slide
+    background-position: center
+    background-size: cover
+    width: 30em
+    height: 20em
+    border: 5px solid #FFF

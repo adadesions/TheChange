@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Alice|Great+Vibes')
 
 body
-  padding: 50px
+  // padding: 50px
   padding-top: 0
   margin: 0
   // font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
@@ -32,6 +32,13 @@ nav
     -webkit-transform: skew(15deg)
 	   -moz-transform: skew(15deg)
 	   -o-transform: skew(15deg)
+
+.flex-all
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
 
   #nav-home
     background-color: #F2671F
@@ -106,7 +113,10 @@ nav
   height: 25em
 
 #app-container
-  margin-top: 4.2em
+  padding: 3em
+  padding-top: 4em
+  min-height: 100%
+  margin-bottom: 1em
 
 #home-page
   .image-header
@@ -268,3 +278,35 @@ nav
   background-color: #fff
   color: #60047A
   font-weight: 900
+
+footer
+  position: relative
+  width: auto
+  height: auto
+  background-color: #242124
+  padding: 2em
+  border-top: 4px solid #FFF  
+  a
+    margin-right: 1em
+  hr
+    border: 2px solid #333
+  iframe
+    border-radius: 1em
+  .header-text-footer
+    color: #b39700
+    font-family: 'Great Vibes', cursive
+    font-size: 35px
+    letter-spacing: 5px
+    text-align: center
+    text-shadow: 4px 6px #000
+  #footer-container
+    padding: 1em
+    padding-left: 5.5em
+    align-items: baseline
+    .footer-item
+      width: 100%
+      height: auto
+      border-left: 3px solid #333
+      padding-left: 0.8em
+      padding-right: 0.8em
+      line-height: 1.5em

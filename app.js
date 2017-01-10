@@ -27,6 +27,7 @@ app.use(require('node-sass-middleware')({
   sourceMap: true
 }));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/javascripts', express.static(path.join(__dirname, 'public/javascripts')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
 
 app.use('/', routes);

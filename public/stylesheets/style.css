@@ -405,7 +405,8 @@ footer {
       text-align: center;
       font-size: 12px; }
   #home-page #greeting-section {
-    padding-top: 1.5em; }
+    padding-top: 1.5em;
+    padding-bottom: 2em; }
     #home-page #greeting-section .header-greeting {
       font-family: 'Great Vibes', cursive;
       font-size: 27px;
@@ -416,6 +417,10 @@ footer {
     #home-page .swiper-container img {
       height: 20em;
       width: auto; }
+  #home-page .body-greeting {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0; }
   #room-section, #services-page, #facilities-page {
     height: 30em;
     margin-bottom: 0; }
@@ -431,6 +436,11 @@ footer {
       line-height: 2em; }
       #room-section .text i, #services-page .text i, #facilities-page .text i {
         margin-right: 1em; }
+  #services-page, #facilities-page {
+    margin-top: -1em; }
+    #services-page .swiper-slide, #facilities-page .swiper-slide {
+      padding-top: 3em;
+      padding-left: 0.7em; }
   .services-facilities-container {
     flex-flow: column nowrap; }
     .services-facilities-container .flex-item {
@@ -448,8 +458,10 @@ footer {
       letter-spacing: 5px; }
     .services-facilities-container ul {
       line-height: 30px; }
-  footer {
-    display: none; }
+  footer #footer-container {
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 2em; }
   .bedroom-page h1 {
     font-size: 18px; }
   .bedroom-page .image-header {
@@ -496,6 +508,12 @@ footer {
   .direction-page .head-text {
     font-size: 25px;
     padding: 0.5em;
-    padding-top: 1.5em; } }
+    padding-top: 1.5em; }
+  .hidden-mobile {
+    display: none; }
+  #aboutus-page .content h1 {
+    font-size: 26px; }
+  #aboutus-page .content p {
+    font-size: 14px; } }
 
 /*# sourceMappingURL=style.css.map */

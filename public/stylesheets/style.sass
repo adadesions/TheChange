@@ -414,6 +414,7 @@ footer
   #home-page
     #greeting-section
       padding-top: 1.5em
+      padding-bottom: 2em
       .header-greeting
         font-family: 'Great Vibes', cursive
         font-size: 27px
@@ -424,6 +425,10 @@ footer
       img
         height: 20em
         width: auto
+    .body-greeting
+      padding-left: 0.5em
+      padding-right: 0.5em
+      padding-bottom: 0
   #room-section,#services-page,#facilities-page
     height: 30em
     margin-bottom: 0
@@ -439,6 +444,11 @@ footer
       line-height: 2em
       i
         margin-right: 1em
+  #services-page,#facilities-page
+    margin-top: -1em
+    .swiper-slide
+      padding-top: 3em
+      padding-left: 0.7em
   .services-facilities-container
     flex-flow: column nowrap
     .flex-item
@@ -459,7 +469,10 @@ footer
       line-height: 30px
 
   footer
-    display: none
+    #footer-container
+      flex-direction: column
+      padding: 0
+      padding-bottom: 2em
 
   .bedroom-page
     h1
@@ -514,3 +527,11 @@ footer
       font-size: 25px
       padding: 0.5em
       padding-top: 1.5em
+  .hidden-mobile
+    display: none
+  #aboutus-page
+    .content
+      h1
+        font-size: 26px
+      p
+        font-size: 14px

@@ -1,8 +1,8 @@
 $(document).ready(function () {
   var width = $(window).width();
   var height = $(window).height();
-
-   if( width >= 300)
+  console.log(width);
+   if( width <= 1024)
    {
      var greetingSwiper = new Swiper ('#greeting-section-slide', {
        // Optional parameters

@@ -3,10 +3,10 @@
     <div class="image-header-text">
       <h1>Two BedRoom</h1>
       <p>
-        Size 42 sqm.<br />
+        Size 49 sqm.<br />
         43" Flat screen TV,  Microwave, Electric Stove<br />
         Coffee and Tea making facilities <br />
-        Shower, Balcony, Double Curtains
+        Shower, Balcony, Cabinet
       </p>
     </div>
     <img src="/images/2bed/b1.png" alt="" />
@@ -14,15 +14,9 @@
   <h1>Inside Our Two Bedrooms</h1>
   <div id="bedroom-slide" class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image:url(/images/2bed/b1.png)"></div>
-      <div class="swiper-slide" style="background-image:url(/images/2bed/b2.png)"></div>
-      <div class="swiper-slide" style="background-image:url(/images/2bed/b3.png)"></div>
-      <div class="swiper-slide" style="background-image:url(/images/2bed/b4.png)"></div>
-      <div class="swiper-slide" style="background-image:url(/images/2bed/b5.png)"></div>
-      <div class="swiper-slide" style="background-image:url(/images/2bed/b6.png)"></div>
-      <div class="swiper-slide" style="background-image:url(/images/2bed/b7.png)"></div>
-      <div class="swiper-slide" style="background-image:url(/images/2bed/b8.png)"></div>
-      <div class="swiper-slide" style="background-image:url(/images/2bed/b9.png)"></div>
+      {{#each twobedSlide}}
+      <div class="swiper-slide" style="background-image:url({{img}})"></div>
+      {{/each}}
     </div>
   </div>
 </div>

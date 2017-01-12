@@ -15,23 +15,13 @@
     <div id='greeting-section-slide' class='swiper-container'>
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">
-        <img class='swiper-lazy' src="images/slides/IMG_8666_3.png" alt="" />
-        <div class="swiper-lazy-preloader"></div>
-      </div>
-      <div class="swiper-slide">
-        <img class='swiper-lazy' src="images/slides/IMG_8668_3.png" alt="" />
-        <div class="swiper-lazy-preloader"></div>
-      </div>
-      <div class="swiper-slide">
-        <img class='swiper-lazy' src="images/slides/IMG_8672_3.png" alt="" />
-        <div class="swiper-lazy-preloader"></div>
-      </div>
-      <div class="swiper-slide">
-        <img class='swiper-lazy' src="images/slides/IMG_8673_3.png" alt="" />
-        <div class="swiper-lazy-preloader"></div>
-      </div>
+        <!-- Slides -->
+        {{#each greetingSlide}}
+          <div class="swiper-slide">
+            <img class='swiper-lazy' src={{img}} alt="" />
+            <div class="swiper-lazy-preloader"></div>
+          </div>
+        {{/each}}
       </div>
     </div>
     <p class='body-greeting'>
@@ -55,11 +45,10 @@
                   This room can stay 2 persons
                 </p>
                   <ul>
-                    <li>* 43 Units</li>
                     <li>* Size 32 sqm</li>
                     <li>* Flat screen TV</li>
                     <li>* Microwave</li>
-                    <li>* Electric Stove</li>
+                    <li>* Kettle</li>
                     <li>* Free WIFI internet</li>
                   </ul>
               </div>
@@ -74,11 +63,10 @@
                   This room can stay up to 2 persons
                 </p>
                   <ul>
-                    <li>* 43 Units</li>
-                    <li>* Size 42 sqm</li>
+                    <li>* Size 49 sqm</li>
                     <li>* Flat screen TV</li>
                     <li>* Microwave</li>
-                    <li>* Electric Stove</li>
+                    <li>* Kettle</li>
                     <li>* Free WIFI internet</li>
                   </ul>
               </div>
@@ -96,15 +84,15 @@
         <h1>SERVICES</h1>
         <p>
           <ul>
-            <li>24 Hours recaption service</li>
-            <li>CCTV</li>
-            <li>FREE! WIFI High-Speed Internet</li>
+            <li>FREE! WIFI อินเทอร์เน็ตความเร็วสูง</li>
             <li>FREE! Cable TV</li>
-            <li>FREE! DVD Library and DVD Player on request</li>
-            <li>Mobile phone for rent</li>
+            <li>พนักงานต้อนรับบริการเวลา 07.00 - 23.00 น</li>
+            <li>มีบริการซักรีด</li>
+            <li>ระบบรักษาความปลอดภัย 24 ชั่วโมง - Keycard</li>
+            <li>กล้องวงจรปิด CCTV</li>
           </ul>
         </p>
-          <a href="/services">
+          <a href="/facilities">
             <div class="button services-button">
               More Services...
             </div>
@@ -112,24 +100,23 @@
       </div>
     </div>
     <div id="services-item-right" class="flex-item">
-      <img src="/images/facilities/f14.png" alt="">
+      <img src="/images/facilities/index-facilities1.png" alt="">
     </div>
   </div>
   <div class="services-facilities-container flex-all">
     <div id="facilities-item-left" class="flex-item">
-      <img src="/images/facilities/f5.png" alt="">
+      <img src="/images/facilities/index-facilities2.png" alt="">
     </div>
     <div id="facilities-item-right" class="flex-item">
       <div class="text">
         <h1>FACILITIES</h1>
         <p>
           <ul>
-            <li>2 Elevators</li>
-            <li>Huge Swimming Pool</li>
-            <li>Secured and Parking Space</li>
-            <li>Modern Pool View Gym</li>
-            <li>CHANGE Bisto ( Restaurant )</li>
-            <li>Souvenir Shop ( local handmade )</li>
+            <li>Huge Swimming Pool and Jacuzzi</li>
+            <li>ลาดจอดรถ - Parking Space</li>
+            <li>ฟิตเนสวิวสระว่ายน้ำ - Modern Pool View Gym</li>
+            <li>ร้านอาหาร CHANGE Bisto ( Restaurant )</li>
+            <li>Convenience Store ( มินิมาร์ท )</li>
           </ul>
         </p>
           <a href="/facilities">

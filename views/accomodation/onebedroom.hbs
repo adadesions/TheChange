@@ -4,9 +4,8 @@
       <h1>One BedRoom</h1>
       <p>
         Size 32 sqm.<br />
-        43" Flat screen TV,  Microwave, Electric Stove<br />
-        Coffee and Tea making facilities <br />
-        Shower, Balcony, Double Curtains
+        43" Flat screen TV,  Microwave, <br />
+        Coffee and Tea making facilities, Shower, Balcony, Cabinet <br />
       </p>
     </div>
     <img src="/images/1bed/b1.png" alt="" />
@@ -14,10 +13,9 @@
   <h1>Inside Our One Bedroom</h1>
   <div id="bedroom-slide" class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image:url(/images/1bed/b1.png)"></div>
-      <div class="swiper-slide" style="background-image:url(/images/1bed/b2.png)"></div>
-      <div class="swiper-slide" style="background-image:url(/images/1bed/b3.png)"></div>
-      <div class="swiper-slide" style="background-image:url(/images/1bed/b4.png)"></div>
+      {{#each onebedSlide}}
+      <div class="swiper-slide" style="background-image:url({{img}})"></div>
+      {{/each}}
     </div>
   </div>
 </div>

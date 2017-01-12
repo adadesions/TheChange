@@ -1,6 +1,6 @@
 function showBorder(el, borderColor){
   const value = '0.5em solid' + borderColor;
-  $(el).css({'border-bottom': value})
+  $(el).stop().css({'border-bottom': value})
   .animate({
     borderWidth: '0.5em'
   }, 'fast');
@@ -8,7 +8,7 @@ function showBorder(el, borderColor){
 
 function hideBorder(el){
   const value = 'none'
-  $(el).css({'border-bottom': value});
+  $(el).stop().css({'border-bottom': value});
 }
 
 function showSubMenu(el, borderColor, speed) {
@@ -22,7 +22,7 @@ function showSubMenu(el, borderColor, speed) {
   .animate({
     borderWidth: '0.5em',
   }, '1000');
-  ele.slideDown(speed);
+  ele.stop().slideDown(speed);
 }
 function hideSubMenu(el, speed) {
   const ele = $(el);
@@ -31,7 +31,7 @@ function hideSubMenu(el, speed) {
     'padding-bottom': '0',
     'border-bottom': 'none'
   });
-  ele.slideUp(speed);
+  ele.stop().slideUp(speed);
 }
 
 $(function() {
@@ -41,10 +41,14 @@ $(function() {
   const services = $('#nav-services');
   const facilities = $('#nav-facilities');
   const aboutus = $('#nav-aboutus');
+  
+  $(window).on('hashchange', function () {
+    window.scrollTo(window.scrollX, window.scrollY - 100);
+  });
 
 // HOME
   home.mouseenter(function () {
-    showBorder(this, '#F9A113');
+    showBorder(this, '#FFDB61');
   });
 
   home.mouseleave(function () {
@@ -54,8 +58,8 @@ $(function() {
 
 // ACCOMODATION
   accomodation.mouseenter(function(){
-    showBorder(this, '#7F1118');
-    showSubMenu('#sub-accomodation', '#7F1118', 500);
+    showBorder(this, '#37401B');
+    showSubMenu('#sub-accomodation', '#37401B', 500);
   });
   accomodation.mouseleave(function(){
     $(this).css({'border-bottom': 'none'});
@@ -88,8 +92,8 @@ $(function() {
 
 // FACILITIES
   facilities.mouseenter(function () {
-    showBorder(this, '#910283');
-    showSubMenu('#sub-facilities', '#910283', 500);
+    showBorder(this, '#2BB4D1');
+    showSubMenu('#sub-facilities', '#2BB4D1', 500);
   });
 
   facilities.mouseleave(function () {
@@ -99,15 +103,22 @@ $(function() {
 // END FACILITIES
 
 // ABOUT US
-  aboutus.mouseenter(function () {
-    showBorder(this, '#411ED3');
-    showSubMenu('#sub-aboutus', '#411ED3', 500);
-  });
-
-  aboutus.mouseleave(function () {
+  aboutus.hover(function () {
+    showBorder(this, '#9E5A7D');
+    showSubMenu('#sub-aboutus', '#9E5A7D', 500);
+  },function () {
     hideBorder(this);
-    hideSubMenu('#sub-aboutus', 'fast');
+    hideSubMenu('#sub-aboutus', "fast");
   });
+  // aboutus.mouseenter(function () {
+  //   showBorder(this, '#9E5A7D');
+  //   showSubMenu('#sub-aboutus', '#9E5A7D', 500);
+  // });
+  //
+  // aboutus.mouseleave(function () {
+  //   hideBorder(this);
+  //   hideSubMenu('#sub-aboutus', 100);
+  // });
 // END ABOUT US
 
 });

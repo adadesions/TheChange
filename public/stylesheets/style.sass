@@ -6,7 +6,7 @@ body
   margin: 0
   // font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
   font-family: 'Alice', serif
-  background-color: #000
+  background-color: #292929
   color: #FFF
 
 a
@@ -26,7 +26,7 @@ nav
   justify-content: flex-end
   align-items: flex-start
   position: absolute
-  right: 50px
+  right: 48px
   top: 2em
   z-index: 100
   .nav-item
@@ -36,30 +36,28 @@ nav
     padding-bottom: 1em
     width: 13em
     text-align: center
-    -webkit-transform: skew(15deg)
-	   -moz-transform: skew(15deg)
-	   -o-transform: skew(15deg)
-
+    color: #E5CCA4
   #nav-home
-    background-color: #F2671F
+    background-color: #AB9353
 
   #nav-accomodation
-    background-color: #C91b26
+    background-color: #57652A
 
   #nav-services
     background-color: #9C0F5F
 
   #nav-facilities
-    background-color: #60047A
+    background-color: #155765
 
   #nav-aboutus
-    background-color: #160A47
+    background-color: #4D2C3D
 
   .sub-menu
     display: none
     margin-top: 1em
   .submenu-text
     padding: 1em
+    color: #E5CCA4
     cursor: pointer
 
   #sub-accomodation
@@ -82,31 +80,22 @@ nav
     padding: 1em
     position: relative
     margin-top: 1em
-    background-color: #7F1118
+    background-color: #515E27
     border-radius: 1em
     .submenu-text
       border-radius: 1em
     .submenu-text:hover
-      background-color: #C91b26
+      background-color: #6C7D34
 
+  #sub-facilities-header
+    color: #E5CCA4
   #sub-facilities
     .submenu-text:hover
-      background-color: #910283
+      background-color: #14515E
 
   #sub-aboutus
     .submenu-text:hover
-      background-color: #411ED3
-
-
-  #logo
-    // border: 2px solid #fff
-    padding: 1em
-    flex-grow: 1
-    img
-      flex-grow: 2
-      margin-left : 6em
-      margin-right : 6em
-      width: 8em
+      background-color: #5E364B
 
 .section
   width: 100%
@@ -140,7 +129,7 @@ nav
   background-color: rgba(0,0,0,0.6)
   padding: 2em
   border-radius: 1em
-  border-bottom: 1em solid rgba(255,215,0,0.7)
+  border-bottom: 1em solid rgba(255,198,106,0.7)
   h1
     font-family: 'Alice', serif
     font-size: 36px
@@ -190,11 +179,11 @@ nav
     background-size: cover
     background-position: center
   .parallax-bg-room
-    background-image: url('/images/slides/room.png')
+    background-image: url('/images/room.png')
   .parallax-bg-services
     background-image: url('/images/services/s3.png')
   .parallax-bg-facilities
-    background-image: url('/images/facilities/f1.png')
+    background-image: url('/images/facilities/header-facilities.png')
   .swiper-container
     width: 100%
     height: 100%
@@ -234,10 +223,12 @@ nav
     line-height: 30px
 
 #services-item-left
-  background-color: #5C0930
+  background-color: #AB987A
+  color: #F5F5F5
 
 #facilities-item-right
-  background-color: #500366
+  background-color: #E5CCA4
+  color: #7F725B
 
 .button
   border: 2px solid #FFF
@@ -245,13 +236,15 @@ nav
   text-align: center
   cursor: pointer
 .services-button:hover
-  background-color: #fff
-  color: #9C0F5F
+  background-color: #FFF
+  color: #AB987A
   font-weight: 900
-
+.facilities-button
+  border-color: #7F725B
+  color: #7F725B
 .facilities-button:hover
-  background-color: #fff
-  color: #60047A
+  background-color: #7F725B
+  color: #E5CCA4
   font-weight: 900
 
 footer
@@ -305,11 +298,11 @@ footer
   flex-direction: column
   .facilities-in-item
     width: 100%
-    height: 10em
+    height: auto
     img
       max-width: 100%
       max-height: 100%
-    #facilities-slide
+    .facilities-slide
       width: 100%
       padding-top: 50px
       padding-bottom: 50px
@@ -318,6 +311,15 @@ footer
         background-size: cover
         width: 30em
         height: 20em
+        border: 5px solid #FFF
+    .facilities-slide-grid
+      width: 100%
+      height: 35em
+      .swiper-slide
+        background-position: center
+        background-size: cover
+        width: 30em
+        height: 15em
         border: 5px solid #FFF
 
 #aboutus-page
@@ -368,7 +370,12 @@ footer
     letter-spacing: 5px
   ul
     line-height: 30px
-
+.services-facilities-container
+  .bank-text
+    line-height: 30px
+    font-size: 18px
+  .bank-logo
+    width: 50%
 #contact-item-left
   background-color: #253529
 
@@ -505,13 +512,21 @@ footer
       text-align: center
       h1
         font-size: 20px
-      #facilities-slide
+      .facilities-slide
         width: 100%
         .swiper-slide
           background-position: center
           background-size: cover
-          width: 10em
-          height: 20em
+          width: 20em
+          height: 15em
+      .facilities-slide-grid
+        margin-bottom: -10em
+        .swiper-slide
+          background-position: center
+          background-size: cover
+          width: 35em
+          height: 10em
+          border: 5px solid #FFF
 
   .contact-page-container
     flex-flow: column nowrap

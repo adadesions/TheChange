@@ -316,6 +316,17 @@ footer {
         width: 30em;
         height: 15em;
         border: 5px solid #FFF; }
+    .facilities-container .facilities-in-item .facilities-header {
+      text-align: center;
+      width: 100%;
+      padding: 0;
+      padding-left: 1em;
+      color: #E5CCA4;
+      background-color: #AB9353;
+      border-top: 5px solid #E5CCA4;
+      border-bottom: 5px solid #E5CCA4; }
+      .facilities-container .facilities-in-item .facilities-header h1 {
+        color: #FFF; }
 
 #aboutus-page {
   background-color: #FFF;

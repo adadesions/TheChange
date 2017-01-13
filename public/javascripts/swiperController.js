@@ -35,11 +35,11 @@ $(document).ready(function () {
 
    var roomSwiper = new Swiper('#room-section', {
      parallax: true,
-     speed: 2000,
+     speed: 4000,
      nextButton: '.swiper-button-next',
      prevButton: '.swiper-button-prev',
      loop: true,
-     autoplay: 2500
+     autoplay: 3500
    });
 
    var bedroomSwiper = new Swiper('#bedroom-slide', {
@@ -47,6 +47,8 @@ $(document).ready(function () {
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: 'auto',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
         coverflow: {
             rotate: 50,
             stretch: 0,
@@ -80,7 +82,7 @@ $(document).ready(function () {
    createFacilitiesSlide('#fitness');
    createFacilitiesSlide('#saunas');
    createFacilitiesSlideGrid('#restaurant');
-   createFacilitiesSlide('#parking');
+   createFacilitiesSlide('#convenience-store-and-parking');
 
 });
 
@@ -90,6 +92,8 @@ function createFacilitiesSlide(id){
        grabCursor: true,
        centeredSlides: true,
        slidesPerView: 'auto',
+       nextButton: '.swiper-button-next',
+       prevButton: '.swiper-button-prev',
        coverflow: {
            rotate: 50,
            stretch: 0,
@@ -107,6 +111,8 @@ function createFacilitiesSlideGrid(id){
       slidesPerColumn: 2,
       paginationClickable: true,
       spaceBetween: 30,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
       loop: true
   });
 }

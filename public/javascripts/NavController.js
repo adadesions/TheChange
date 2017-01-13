@@ -41,7 +41,7 @@ $(function() {
   const services = $('#nav-services');
   const facilities = $('#nav-facilities');
   const aboutus = $('#nav-aboutus');
-  
+
   $(window).on('hashchange', function () {
     window.scrollTo(window.scrollX, window.scrollY - 100);
   });
@@ -109,16 +109,7 @@ $(function() {
   },function () {
     hideBorder(this);
     hideSubMenu('#sub-aboutus', "fast");
-  });
-  // aboutus.mouseenter(function () {
-  //   showBorder(this, '#9E5A7D');
-  //   showSubMenu('#sub-aboutus', '#9E5A7D', 500);
-  // });
-  //
-  // aboutus.mouseleave(function () {
-  //   hideBorder(this);
-  //   hideSubMenu('#sub-aboutus', 100);
-  // });
+  });  
 // END ABOUT US
 
 });
